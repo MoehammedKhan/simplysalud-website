@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.banner{
+    width: 100%;
+    height: 125px;
+    background-color: #515257;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+    font-size: 36px;
+    text-decoration: none;
+    color: #fdbd00;
+    position: relative;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 24px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fdbd00;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fdbd00;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.logo::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fdbd00;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+width: 100%;
+}
+.logo:hover::after{
+width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 357px;
+    text-align: center;
+    color: #fdbd00;
+    font-size: 47px;
+    display: flex;
+    align-items: center;
+    background-color: #515257;
+    justify-content: center;
+}
+.title{
+    width: 100%;
+    position: absolute;
+    top: 125px;
+    text-align: center;
+    color: #fdbd00;
+    font-size: 75px;
+    background-color: #515257;
+    border-top: 7px solid #fdbd00;
+}
+.calendar{
+    font-size: 95px;
+    margin-right: 85px;
+}
+
